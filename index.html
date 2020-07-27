@@ -4,39 +4,50 @@
  <meta charset="UTF-8">
  <title>Tesla - Машина будущего</title>
  <link rel="stylesheet" href="fonts.css">
+ <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
    <header class="header">
       <img src="header/Tesla-Wordmark-Redlogo.png" alt="Логотип компании Tesla" class="header__logo">
-      <nav class="nav">
+      <nav class="header-nav">
          <a href="#" class="nav__link">Модель S</a>
          <a href="#" class="nav__link">Модель X</a>
          <a href="#" class="nav__link">Model 3</a>
          <a href="#" class="nav__link">Roadster</a>
          <a href="#" class="nav__link">Energy</a>
       </nav>
-      <ol class="menu-header">
-         <li><a href="#" class="menu-header__link">Магазин</a></li>
-         <li><a href="#" class="menu-header__link">Войти</a></li>
-      </ol>
+      <div class="header-menu">
+         <a href="#" class="header-menu__link">Магазин</a>
+         <a href="#" class="header-menu__link">Войти</a>
+         <span class="header-menu__mobule"></span>
+      </div>
    </header>
    <section class="wrap">
       <article class="main-content">
-         <img src="main-content/Model S.png" alt="Логитип Model S" class="main-content__logo">
+         <h1 class="main-content__logo">MODEL S</h1>
          <p class="main-content__description">Добро пожаловать в будущее!</p>
          <img src="main-content/tesla-png-tesla-png-hd-1636.png" alt="Машина Tesla" class="main-content__bg">
       </article>
       <article class="advantages">
-         <div class="advantages-speed">
-            2,7<span class="advantages-speed__unit">сек</span>
-            <p class="advantages-speed__description">0-100 км/час</p>
+         <div class="advantages-speed advantages__item">
+            <img src="advantages/Vector.png" alt="" class="advantages__item-img">
+            <div class="advantages__item-text">
+              2,7<span class="advantages-speed__unit">сек</span>
+              <p class="advantages-item__description">0-100 км/час</p>
+            </div>
          </div>
-         <div class="advantages-reserve">
-            632<span class="advantages-speed__mile">км</span>
-            <p class="advantages-reserve__description">запас хода</p>
+         <div class="advantages-reserve advantages__item">
+          <img src="advantages/Vector (Stroke).png" alt="" class="advantages__item-img"> 
+          <div class="advantages__item-text">
+            632<span class="advantages-speed__unit">км</span>
+            <p class="advantages-item__description">запас хода</p>
+          </div>
          </div>
-         <div class="advantages-test">Тест драйв</div>
-         <button class="advantages__button">Заказать</button>
+         <div class="advantages-test advantages__item">
+          <img src="advantages/steering-wheel.png" alt="" class="advantages-test__img">
+          <div class="advantages-test__text advantages__item">Тест драйв</div>
+         </div>
+         <button class="advantages__button">ЗАКАЗАТЬ</button>
       </article>
       <article class="model-s">
          <img src="model-s/Model S.png" alt="" class="model-s__logo">
