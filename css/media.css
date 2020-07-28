@@ -6,9 +6,10 @@
     }
     .header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 4fr 4fr 4fr;
         align-items: center;
         justify-content: center;
+        margin-bottom: 30px;
     }
     .header-nav {
         visibility: hidden;
@@ -17,12 +18,9 @@
         visibility: hidden;
     }
     .header-menu {
-        display: grid;
-        position: relative;
-        grid-template-columns: repeat(1, auto);
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
-        justify-content: end;
-        grid-gap: 30px;
     }
     .header-menu__mobule {
         position: relative;
@@ -46,8 +44,121 @@
         background-color: #E51937;
         bottom: -6px;
     }
+    .main-content {
+        background: url('../main-content/Tesla-Wordmark-Red.png');
+        max-height:  467px;
+        background-size: 100%;
+        background-position: center;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        margin-bottom: 150px;
+    }
+    .main-content__logo {
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 61px;
+        margin: 0;
+    }
+    .main-content__description {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        margin: 0;
+    }
+    .main-content__bg {
+        max-width: 968px;
+        min-width: 357px;
+        padding-top: 13%; 
+        padding-right: 9%;
+        margin: auto;
+    }
+    .advantages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .advantages__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 5px;
+    }
+    .advantages__item-text {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .advantages__item {
+        font-style: normal;
+        justify-self: center;
+    }
+    .advantages-speed__unit {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .advantages-item__description {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        margin: 0;
+    }
+    .advantages-test__img {
+        width: 30px;
+        height: 20px;
+        background: url('../advantages/steering-wheel_mobule.png') no-repeat center;
+    }
+    .advantages-test {
+        color: #e51937;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .advantages__button {
+        border: 2px solid #e51937;
+        width: 160px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        background: #e51937;
+        margin: auto;
+    }
+    .advantages::after {
+        content: ' ';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-top: 3px solid #e51937;
+        border-right: 3px solid #e51937;
+        transform: rotate(135deg);
+        left: 50%;
+        bottom: -25%;
+        cursor: pointer;
+    }
 }
 @media(min-width: 641px) {
+  .main-content__logo {
+        font-size: 90px;
+        line-height: 110px;
+  }
+  .main-content__description {
+        font-size: 15px;
+        line-height: 18px;
+  }
+  .advantages__item-text {
+      font-size: 50px;
+      line-height: 61px;
+  }
 }
 @media(min-width: 1025px) {
     a {
@@ -73,15 +184,13 @@
         width: 100%;
     }
     .header {
-        grid-template-columns: 4fr 4fr 4fr;
         margin-right: 50px;
         margin-bottom: 74px;
     }
     .header-nav {
-        display: grid;
         visibility: visible;
+        display: grid;
         grid-template-columns: repeat(5, auto);
-        justify-content: spece-between;
     }
     .nav__link {
         position: relative;
@@ -101,28 +210,6 @@
         justify-content: end;
         grid-gap: 30px;
     }
-    .header-menu__mobule {
-        position: relative;
-        width: 24px;
-        height: 2px;
-        background-color: #E51937;
-    }
-    .header-menu__mobule::before {
-        content: ' ';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: #E51937;
-        top: -6px;
-    }
-    .header-menu__mobule::after {
-        content: ' ';
-        position: absolute;
-        width: 24px;
-        height: 2px;
-        background-color: #E51937;
-        bottom: -6px;
-    }
     .header-menu__link {
         visibility: visible;
         text-decoration: none;
@@ -133,83 +220,38 @@
         line-height: 18px;
     }
     .main-content {
-        background: url('../main-content/Tesla-Wordmark-Red.png');
-        height:  467px;
-        background-position: center;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
         margin-bottom: 120px;
-    }
-    .main-content__logo {
-        text-align: center;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 90px;
-        margin: 0;
-    }
-    .main-content__description {
-        text-align: center;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 18px;
-        margin: 0;
     }
     .main-content__bg {
         max-width: 968px;
         margin: auto;
+        padding: 0;
     }
     .advantages {
-        display: grid;
         grid-template-columns: 1fr 1fr 2fr 1fr;
-        align-items: center;
-        justify-content: center;
-    }
-    .advantages__item {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        align-items: center;
-        justify-content: center;
-        grid-gap: 5px;
     }
     .advantages__item-text {
-        font-style: normal;
-        font-weight: 600;
         font-size: 35px;
         line-height: 43px;
     }
-    .advantages__item {
-        font-style: normal;
-        justify-self: center;
-    }
-    .advantages-speed__unit {
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .advantages-item__description {
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
-        margin: 0;
+    .advantages-test__img {
+        width: 30px;
+        height: 20px;
+        background: url('../advantages/steering-wheel.png') no-repeat center;
     }
     .advantages-test {
-        font-weight: bold;
         font-size: 13px;
         line-height: 16px;
-        text-align: center;
-        text-transform: uppercase;
+        color: #000;
     }
     .advantages__button {
-        border: 2px solid #E51937;
         width: 160px;
         height: 40px;
         color: #E51937;
-        text-align: center;
+        background: #fff;
         border-radius: 3px;
     }
     .advantages::after {
-        content: ' ';
-        position: absolute;
         width: 28px;
         height: 28px;
         border-top: 3px solid #E51937;
@@ -217,7 +259,6 @@
         transform: rotate(135deg);
         left: 50%;
         bottom: -25%;
-        cursor: pointer;
     }
 }
 
