@@ -2,7 +2,7 @@
     body {
         box-sizing: border-box;
         font-family: Montserrat, sans-serif;
-        background-color: #E5E5E5;
+        background-color: #fff;
     }
     .header {
         display: grid;
@@ -51,7 +51,7 @@
         background-position: center;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-        margin-bottom: 150px;
+        margin-bottom: 10%;
     }
     .main-content__logo {
         text-align: center;
@@ -105,9 +105,10 @@
         line-height: 24px;
     }
     .advantages-item__description {
+        display: block;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 10px;
+        line-height: 12px;
         margin: 0;
     }
     .advantages-test__img {
@@ -124,6 +125,7 @@
         text-transform: uppercase;
     }
     .advantages__button {
+        cursor: pointer;
         border: 2px solid #e51937;
         width: 160px;
         height: 40px;
@@ -158,6 +160,10 @@
   .advantages__item-text {
       font-size: 50px;
       line-height: 61px;
+  }
+  .advantages-item__description {
+      font-size: 12px;
+      line-height: 15px;
   }
 }
 @media(min-width: 1025px) {
@@ -219,16 +225,25 @@
         font-size: 15px;
         line-height: 18px;
     }
-    .main-content {
-        margin-bottom: 120px;
-    }
     .main-content__bg {
         max-width: 968px;
         margin: auto;
         padding: 0;
     }
     .advantages {
-        grid-template-columns: 1fr 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr 1fr 1fr;
+    }
+    .advantages-speed {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+    .advantages-reserve {
+        grid-column: 3/4;
+        justify-self: center;
+    }
+    .advantages-test {
+        grid-column: 4/5;
+        justify-self: end;
     }
     .advantages__item-text {
         font-size: 35px;
@@ -245,6 +260,8 @@
         color: #000;
     }
     .advantages__button {
+        grid-column: 5/7;
+        justify-self: end;
         width: 160px;
         height: 40px;
         color: #E51937;
@@ -259,6 +276,10 @@
         transform: rotate(135deg);
         left: 50%;
         bottom: -25%;
+    }
+    .advantages__button:hover {
+      background: #d3d3;
+      box-shadow: 2px 2px white, 4px 4px;
     }
 }
 
