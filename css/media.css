@@ -73,7 +73,6 @@
         max-width: 968px;
         min-width: 357px;
         padding-top: 9%; 
-        padding-right: 9%;
         margin: auto;
     }
     .advantages {
@@ -158,6 +157,9 @@
         transform: rotate(135deg);
         left: 50%;
         cursor: pointer;
+    }
+    .soft__img {
+      width: 100%;
     }
 }
 @media(min-width: 641px) {
