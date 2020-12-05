@@ -530,6 +530,9 @@ body {
   .section-second {
     background-position: -5px 123px;
   }
+  .header__burger {
+  	display: none;
+		}
 }
 
 @media (max-width: 1251px) {
@@ -552,7 +555,9 @@ body {
   .header {
     width: 100%;
   }
-
+  .header__burger {
+  	display: block;
+		}
   .header__menu,
   .header__button,
   .menu__link {
@@ -637,7 +642,6 @@ body {
   .information {
     max-width: 650px;
   }
-
   .aside-second {
     width: 50%;
   }
@@ -951,7 +955,6 @@ body {
   .button__text {
     padding-left: 44px;
   }
-
   .information {
     max-width: 400px;
   }
