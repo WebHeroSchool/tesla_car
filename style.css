@@ -41,7 +41,7 @@ body {
   font-weight: 600;
   font-size: 15px;
   line-height: 33px;
-  color: #000000;
+  color: #000;
 }
 
 .menu__link__active {
@@ -200,7 +200,7 @@ body {
   background: transparent;
   margin-top: -18px;
   padding-left: 41.5px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .section-first__arrow {
@@ -210,7 +210,6 @@ body {
   margin: 0 auto;
 }
 
-/*Style section-second*/
 
 .section-second {
   width: 100%;
@@ -518,7 +517,7 @@ body {
   width: 100%;
 }
 
-/*Адаптивное отображение*/
+
 
 @media (max-width: 1411px) {
   .section-second {
@@ -531,7 +530,7 @@ body {
     background-position: -5px 123px;
   }
   .header__burger {
-  	display: none;
+  		display: none;
 		}
 }
 
@@ -556,7 +555,7 @@ body {
     width: 100%;
   }
   .header__burger {
-  	display: block;
+  		display: block;
 		}
   .header__menu,
   .header__button,
@@ -642,6 +641,7 @@ body {
   .information {
     max-width: 650px;
   }
+
   .aside-second {
     width: 50%;
   }
@@ -955,6 +955,7 @@ body {
   .button__text {
     padding-left: 44px;
   }
+  
   .information {
     max-width: 400px;
   }
