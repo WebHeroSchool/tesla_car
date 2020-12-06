@@ -528,8 +528,8 @@ body {
   }
 
   .header__burger {
-  		display: none;
-		}
+    display: none;
+  }
 }
 
 @media (max-width: 1251px) {
@@ -554,11 +554,8 @@ body {
   }
 
   .header__burger {
-  		display: block;
-		}
-
-
-
+    display: block;
+  }
 
   .header__menu,
   .header__button,
